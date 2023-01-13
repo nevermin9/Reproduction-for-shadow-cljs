@@ -1,0 +1,9 @@
+{:source-paths ["src"]
+ :dependencies [[reagent "1.1.1"]
+                [cider/cider-nrepl "0.29.0"]]
+ :builds {:app {:target :browser
+                :autoload false
+                :output-dir "resources/public/js"
+                :asset-path "/js"
+                :modules {:main {:entries [sight-fe.main]}}}}
+ :dev-http {3000 "resources/public"}}
